@@ -1,0 +1,18 @@
+toc:
+  - title: Learning Theories
+    subfolderitems:
+      - page: Behaviorism
+        url: /behaviorism.html
+      - page: Constructivism
+        url: /constructivism.html
+      - page: Cognitivism 
+        url: /cognitivism.html
+  - title: Instructional Design Models
+    subfolderitems:
+      - page: ADDIE
+        url: /addie.html
+      - page: Dick and Carey
+        url: /dick-carey.html
+      - page: Understanding by Design
+        url: /ubd.html
+        
