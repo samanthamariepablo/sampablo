@@ -63,6 +63,19 @@ a:hover small {
   margin:0 auto;
 }
 
+#submenu {
+  display: block;
+  position: absolute;
+  list-style: none;
+  overflow: hidden;
+    max-height:0;
+    transition: max-height 0.7s ease-in; 
+}
+
+#topmenu:hover #submenu {
+  max-height: 200px;
+}
+
 blockquote {
   border-left:1px solid #e5e5e5;
   margin:0;
