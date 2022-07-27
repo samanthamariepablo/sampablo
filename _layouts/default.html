@@ -48,7 +48,7 @@
         <nav id="nav">
           {% for item in site.data.navigation.toc %}
             <h3>{{ item.title }}</h3>
-              <ul id="subnav">
+              <ul id="subnav" style="list-style-type:none;">
                 {% for entry in item.subfolderitems %}
                 <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
               </ul>
