@@ -63,7 +63,7 @@ a:hover small {
   margin:0 auto;
 }
 
-#submenu {
+#subnav {
   display: block;
   position: absolute;
   list-style: none;
@@ -72,7 +72,7 @@ a:hover small {
     transition: max-height 0.7s ease-in; 
 }
 
-#topmenu:hover #submenu {
+#nav:hover #subnav {
   max-height: 200px;
 }
 
