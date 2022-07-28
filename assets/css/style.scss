@@ -3,6 +3,9 @@
 
 @import "fonts";
 @import "rouge-github";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
 
 body {
   background-color: #fff;
