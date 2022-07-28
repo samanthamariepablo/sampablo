@@ -45,16 +45,39 @@
         {% endif %}
         --->
         
+        <!---
         <nav id="nav">
           {% for item in site.data.navigation.toc %}
             <h3>{{ item.title }}</h3>
-              <ul id="subnav" style="list-style-type:none;">
+              <ul id="subnav">
                 {% for entry in item.subfolderitems %}
                 <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
               </ul>
           {% endfor %}
         </nav>
+        --->
         
+        <nav id="nav">
+          <div class="accordion accordion-flush" id="accordionFlush">
+            <div class="accordion-item">
+            {% for item in site.data.navigation.toc %}
+              <h3 class="accordion-header" id="flush-heading">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse" aria-expanded="false" aria-controls="flush-collapse">
+                  {{ item.title }}
+                </button>
+              </h3>
+              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-heading" data-bs-parent="#accordionFlush">
+                <div class="accordion-body">
+                  <ul id="subnav">
+                    {% for entry in item.subfolderitems %}
+                    <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+     
       </header>
      
       <section>
